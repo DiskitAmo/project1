@@ -1,0 +1,246 @@
+.container {
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: center;
+  background-image: linear-gradient(to right, #7c43f6, #5189fc);
+}
+
+.addTaskBtn {
+  margin-top: 2rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  font-size: 30px;
+  border: 1px solid black !important;
+  margin-left: 1.5rem;
+  margin-bottom: 5rem;
+}
+.heading {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: normal;
+  padding-top: 2rem;
+}
+#plus-sign {
+  color: red;
+  font-size: 30px;
+  padding-right: 0.5rem;
+}
+
+#taskAddForm {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#heading {
+  margin-top: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#member {
+  margin-top: 1rem;
+  text-align: left;
+}
+#addMember {
+  width: 300px;
+  height: 50px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  background-color: #efefef;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+#TaskText {
+  width: 300px;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: #efefef;
+  border: none;
+  outline: none;
+}
+#priority {
+  width: 180px;
+  height: 40px;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+}
+.prioritycolor {
+  padding: 8px;
+  border-radius: 10px;
+}
+.todo-container {
+  background-image: linear-gradient(to right, #7c43f6, #5189fc);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  display: none !important;
+  /* column-gap: 10px;*/
+}
+.todo-content {
+  background-image: linear-gradient(to right, #6145c9, #7684aa);
+  border-radius: 25px;
+  height: auto;
+  max-width: 100% !important;
+}
+.todo-content h3 {
+  color: white;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.todo-headings {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.todo-headings h4 {
+  color: white;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* hr style */
+.hrstyle {
+  height: 1px;
+  background-color: white;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.hrstyle2 {
+  height: 1px;
+  background-color: white;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem !important;
+}
+.hrstyle3 {
+  height: 1px;
+  background-color: white;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem !important;
+}
+.taskList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/* .completetaskList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+} */
+
+.taskList p {
+  font-size: 1.2rem;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.taskCompletedBtn {
+  background-color: transparent;
+  border: none;
+  margin-right: 0.5rem;
+}
+
+.deleteBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.fa-check,
+.fa-trash-o {
+  pointer-events: none;
+}
+
+.modal-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+.modal-backdrop {
+  display: none !important;
+}
+.showModal {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+.hideModal {
+  display: none !important;
+}
+.completed-list {
+  display: grid;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+
+@media screen and (max-width: 900px) {
+  .priorityLevel {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .todo-container {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    column-gap: 20px !important;
+    flex-direction: column !important;
+  }
+  .todo-content {
+    margin-bottom: 2rem !important;
+  }
+  .todo-headings h4 {
+    font-size: 1.3rem !important;
+  }
+}
+@media screen and (max-width: 550px) and (min-width: 450px) {
+  .priorityLevel {
+    font-size: 1rem !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .todo-headings h4 {
+    font-size: 0.8rem !important;
+  }
+  .todo-container {
+    padding-top: 0.8rem !important;
+    padding-bottom: 0.8rem !important;
+  }
+  .todo-content {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+  }
+  .hrstyle {
+    margin-left: 0.3rem !important;
+    margin-right: 0.3rem !important;
+  }
+  .taskList p {
+    font-size: 0.8rem !important;
+  }
+  .priorityLevel {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
